@@ -439,140 +439,6 @@
 				)
 			)
 		)
-		(symbol "Connector:Screw_Terminal_01x01"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Screw_Terminal_01x01"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic screw terminal, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "screw terminal"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TerminalBlock*:*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Screw_Terminal_01x01_1_1"
-				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -1.27)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.5334 0.3302) (xy 0.3302 -0.508)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.3556 0.508) (xy 0.508 -0.3302)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 0.635)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Connector:Screw_Terminal_01x03"
 			(pin_names
 				(offset 1.016) hide)
@@ -1274,7 +1140,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 83.82) (xy 173.99 83.82)
+			(xy 171.45 83.82) (xy 189.23 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1304,7 +1170,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 71.12) (xy 173.99 71.12)
+			(xy 171.45 71.12) (xy 189.23 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1384,7 +1250,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 109.22) (xy 173.99 109.22)
+			(xy 171.45 109.22) (xy 189.23 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1424,7 +1290,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 96.52) (xy 173.99 96.52)
+			(xy 171.45 96.52) (xy 189.23 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1473,6 +1339,50 @@
 			)
 		)
 		(uuid "7f991bd2-16b4-4aec-82fc-25952ea28897")
+	)
+	(label "Jetson GPIO Pin 4"
+		(at 171.45 109.22 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1a67083e-e604-4f9d-b0b3-a92f5a5f9c78")
+	)
+	(label "Jetson GPIO Pin 1"
+		(at 171.45 71.12 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "86fb4ae5-0529-4611-a7ae-4cf18deb25c1")
+	)
+	(label "Jetson GPIO Pin 2"
+		(at 171.45 83.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c9073d56-9be7-4ea0-a57b-78e3801b9124")
+	)
+	(label "Jetson GPIO Pin 3"
+		(at 171.45 96.52 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ec7edbc8-305e-430d-8b24-823b4f915ff2")
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x03")
@@ -1637,7 +1547,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-4_W7.62mm_Socket"
+		(property "Footprint" "Package_DIP:DIP-12_W7.62mm"
 			(at 163.83 71.12 0)
 			(effects
 				(font
@@ -1740,7 +1650,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-4_W7.62mm_Socket"
+		(property "Footprint" "Package_DIP:DIP-12_W7.62mm"
 			(at 163.83 121.92 0)
 			(effects
 				(font
@@ -1819,140 +1729,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x01")
-		(at 179.07 96.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "44ec78c9-89ed-4bf2-b5e0-92b348ed5d6e")
-		(property "Reference" "J9"
-			(at 181.61 95.2499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Screw_Terminal_01x01"
-			(at 181.61 97.7899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_360271_1x01_Horizontal_ScrewM3.0_Boxed"
-			(at 179.07 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 179.07 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 179.07 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6d507760-e6c1-4c4d-8cbe-d5f78a079f14")
-		)
-		(instances
-			(project "Schmitt Trigger Subcircuit Design"
-				(path "/233772b4-07d3-4eaf-b615-99498b3f78db"
-					(reference "J9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Screw_Terminal_01x01")
-		(at 179.07 109.22 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4c9bec0b-9e01-4ab3-b334-7c17589b3e49")
-		(property "Reference" "J10"
-			(at 181.61 107.9499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Screw_Terminal_01x01"
-			(at 181.61 110.4899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_360271_1x01_Horizontal_ScrewM3.0_Boxed"
-			(at 179.07 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 179.07 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 179.07 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bf78785b-4d9a-440c-8fdc-764491492fb2")
-		)
-		(instances
-			(project "Schmitt Trigger Subcircuit Design"
-				(path "/233772b4-07d3-4eaf-b615-99498b3f78db"
-					(reference "J10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "74xx:74LV14")
 		(at 140.97 121.92 270)
 		(unit 7)
@@ -1977,7 +1753,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-4_W7.62mm_Socket"
+		(property "Footprint" "Package_DIP:DIP-12_W7.62mm"
 			(at 140.97 121.92 0)
 			(effects
 				(font
@@ -2212,7 +1988,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-4_W7.62mm_Socket"
+		(property "Footprint" "Package_DIP:DIP-12_W7.62mm"
 			(at 163.83 134.62 0)
 			(effects
 				(font
@@ -2381,7 +2157,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-4_W7.62mm_Socket"
+		(property "Footprint" "Package_DIP:DIP-12_W7.62mm"
 			(at 163.83 83.82 0)
 			(effects
 				(font
@@ -2460,73 +2236,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x01")
-		(at 179.07 71.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c80bffd9-6f48-4287-a582-9a5d2c12ca46")
-		(property "Reference" "J7"
-			(at 181.61 69.8499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Screw_Terminal_01x01"
-			(at 181.61 72.3899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_360271_1x01_Horizontal_ScrewM3.0_Boxed"
-			(at 179.07 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 179.07 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 179.07 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6a4d6778-7bc5-436e-8b0c-f31f36a9b9aa")
-		)
-		(instances
-			(project ""
-				(path "/233772b4-07d3-4eaf-b615-99498b3f78db"
-					(reference "J7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "74xx:74LV14")
 		(at 163.83 96.52 0)
 		(unit 3)
@@ -2551,7 +2260,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-4_W7.62mm_Socket"
+		(property "Footprint" "Package_DIP:DIP-12_W7.62mm"
 			(at 163.83 96.52 0)
 			(effects
 				(font
@@ -2703,73 +2412,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x01")
-		(at 179.07 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "df31ccd3-779e-4c96-bc32-4ccc3e356d59")
-		(property "Reference" "J8"
-			(at 181.61 82.5499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Screw_Terminal_01x01"
-			(at 181.61 85.0899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_360271_1x01_Horizontal_ScrewM3.0_Boxed"
-			(at 179.07 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 179.07 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 179.07 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "acaa55e3-e743-4407-ac1f-76d75aad1a9e")
-		)
-		(instances
-			(project "Schmitt Trigger Subcircuit Design"
-				(path "/233772b4-07d3-4eaf-b615-99498b3f78db"
-					(reference "J8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Screw_Terminal_01x03")
 		(at 121.92 96.52 0)
 		(mirror y)
@@ -2867,7 +2509,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-4_W7.62mm_Socket"
+		(property "Footprint" "Package_DIP:DIP-12_W7.62mm"
 			(at 163.83 109.22 0)
 			(effects
 				(font
