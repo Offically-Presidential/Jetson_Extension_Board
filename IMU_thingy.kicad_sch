@@ -1086,12 +1086,6 @@
 		(uuid "2332751e-a46f-4555-a227-bc00508eceda")
 	)
 	(junction
-		(at 52.07 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "273704d0-1c9a-44a7-a7c4-61fba5f13290")
-	)
-	(junction
 		(at 104.14 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1108,6 +1102,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5cd98ee1-3af0-419b-9cc7-3d1e1e9fc193")
+	)
+	(junction
+		(at 49.53 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "612304bc-dccb-4ceb-bd0c-0fa322dd8373")
 	)
 	(junction
 		(at 90.17 120.65)
@@ -1158,10 +1158,10 @@
 		(uuid "c09a99cf-57cd-4f7e-a7cc-b1e4b56fd1d6")
 	)
 	(junction
-		(at 52.07 21.59)
+		(at 49.53 21.59)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d0a4cdc8-a803-43be-a9ec-45de49d754f1")
+		(uuid "db952b03-e0c2-4fad-b5e7-6ecd97799a20")
 	)
 	(junction
 		(at 104.14 120.65)
@@ -1299,6 +1299,16 @@
 	)
 	(wire
 		(pts
+			(xy 49.53 54.61) (xy 40.64 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37c8b6c0-b4b7-45d4-be60-705d169d0de9")
+	)
+	(wire
+		(pts
 			(xy 115.57 21.59) (xy 115.57 48.26)
 		)
 		(stroke
@@ -1329,7 +1339,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 59.69) (xy 86.36 59.69)
+			(xy 40.64 59.69) (xy 86.36 59.69)
 		)
 		(stroke
 			(width 0)
@@ -1349,7 +1359,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 54.61) (xy 40.64 54.61)
+			(xy 49.53 54.61) (xy 86.36 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1429,7 +1439,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 46.99) (xy 52.07 54.61)
+			(xy 49.53 44.45) (xy 49.53 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1479,16 +1489,6 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 21.59) (xy 58.42 21.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99d19d7e-914f-4fcb-b639-b0b209ad47e0")
-	)
-	(wire
-		(pts
 			(xy 74.93 77.47) (xy 74.93 67.31)
 		)
 		(stroke
@@ -1519,23 +1519,13 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 74.93) (xy 86.36 74.93)
+			(xy 49.53 74.93) (xy 86.36 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a7c1143b-af01-4793-9d9a-a661775c9743")
-	)
-	(wire
-		(pts
-			(xy 52.07 54.61) (xy 86.36 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9dae714-d847-45c9-bb88-39fb5b56f223")
 	)
 	(wire
 		(pts
@@ -1579,7 +1569,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 19.05) (xy 52.07 21.59)
+			(xy 49.53 19.05) (xy 49.53 21.59)
 		)
 		(stroke
 			(width 0)
@@ -1609,7 +1599,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 21.59) (xy 52.07 39.37)
+			(xy 49.53 21.59) (xy 49.53 36.83)
 		)
 		(stroke
 			(width 0)
@@ -1636,6 +1626,16 @@
 			(type default)
 		)
 		(uuid "da72a41a-4c26-4ae5-93b5-482a8fa4f624")
+	)
+	(wire
+		(pts
+			(xy 49.53 21.59) (xy 58.42 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddecd3a0-6707-4bf2-b02d-6de2630d5972")
 	)
 	(wire
 		(pts
@@ -1717,7 +1717,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "06d6f167-f5fb-410b-9ff1-872567c3c71a")
 		(property "Reference" "#PWR06"
 			(at 54.61 72.39 0)
@@ -1728,13 +1727,12 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "I2C1_SDA (Fictional)"
-			(at 46.99 72.3899 90)
+		(property "Value" "I2C1_SDA (GPIO 02)"
+			(at 36.83 72.136 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -1854,10 +1852,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "73456b2c-d5fc-4002-9302-64dfe22f1051")
 		(property "Reference" "C1"
-			(at 125.73 72.39 90)
+			(at 125.73 84.582 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1865,7 +1862,7 @@
 			)
 		)
 		(property "Value" "100 n"
-			(at 125.73 74.93 90)
+			(at 125.73 87.122 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1916,7 +1913,7 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 52.07 19.05 0)
+		(at 49.53 19.05 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1925,7 +1922,7 @@
 		(fields_autoplaced yes)
 		(uuid "7c082011-caf4-4265-b377-c8fe2462a3fa")
 		(property "Reference" "#PWR03"
-			(at 52.07 22.86 0)
+			(at 49.53 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1933,16 +1930,17 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VDDIO (Fictional)"
-			(at 52.07 13.97 0)
+		(property "Value" "VDDIO (3.3V)"
+			(at 52.07 17.7799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 52.07 19.05 0)
+			(at 49.53 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1951,7 +1949,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.07 19.05 0)
+			(at 49.53 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1960,7 +1958,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 52.07 19.05 0)
+			(at 49.53 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1988,7 +1986,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9f4b70a7-fbb7-4faa-b14d-996d92e6e849")
 		(property "Reference" "#PWR05"
 			(at 58.42 64.77 0)
@@ -1999,13 +1996,12 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "nBOOT_LOAD_PIN (fictional)"
-			(at 50.8 64.7699 90)
+		(property "Value" "nBOOT_LOAD_PIN (GPIO 13)"
+			(at 37.084 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -2055,7 +2051,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a4db8337-4211-48b3-907e-c1f9ff4d2a8f")
 		(property "Reference" "#PWR04"
 			(at 44.45 54.61 0)
@@ -2066,8 +2061,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GPIO pin on Jetson"
-			(at 39.37 52.07 90)
+		(property "Value" "nRESET (GPIO 05)"
+			(at 27.432 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2121,10 +2116,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a93a1e4e-6a22-41e3-805d-66bd359cb4e8")
 		(property "Reference" "C4"
-			(at 107.95 43.1799 0)
+			(at 107.442 42.672 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2133,7 +2127,7 @@
 			)
 		)
 		(property "Value" "6.8 n"
-			(at 107.95 45.7199 0)
+			(at 107.442 45.212 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2257,10 +2251,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ae0c4f5c-a76f-46a8-8e97-e596b10f6c91")
 		(property "Reference" "C3"
-			(at 68.58 69.85 90)
+			(at 68.58 81.534 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2268,7 +2261,7 @@
 			)
 		)
 		(property "Value" "120"
-			(at 68.58 72.39 90)
+			(at 68.58 84.074 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2319,16 +2312,15 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 35.56 59.69 90)
+		(at 40.64 59.69 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b854bfd2-e7ac-4a89-a392-5b1e15d4fada")
 		(property "Reference" "#PWR09"
-			(at 39.37 59.69 0)
+			(at 44.45 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2336,8 +2328,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GPIO pin on Jetson"
-			(at 34.29 57.15 90)
+		(property "Value" "INTERRUPT (GPIO 06)"
+			(at 26.162 59.436 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2345,7 +2337,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 59.69 0)
+			(at 40.64 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2354,7 +2346,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 59.69 0)
+			(at 40.64 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2363,7 +2355,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 35.56 59.69 0)
+			(at 40.64 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2402,12 +2394,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VDD"
-			(at 73.66 13.97 0)
+		(property "Value" "VDD (3.3V)"
+			(at 76.2 17.7799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -2451,7 +2444,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 52.07 43.18 0)
+		(at 49.53 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2460,7 +2453,7 @@
 		(fields_autoplaced yes)
 		(uuid "ea4aac25-bbbe-404c-bfc7-6fbb51d782dc")
 		(property "Reference" "Optional"
-			(at 54.61 41.9099 0)
+			(at 52.07 39.3699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2469,7 +2462,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 54.61 44.4499 0)
+			(at 52.07 41.9099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2478,7 +2471,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.292 43.18 90)
+			(at 47.752 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2487,7 +2480,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 52.07 43.18 0)
+			(at 49.53 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2496,7 +2489,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 52.07 43.18 0)
+			(at 49.53 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2591,16 +2584,15 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 44.45 74.93 90)
+		(at 49.53 74.93 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "fa258e4b-41f2-4aa8-ad94-6c9c0a491e19")
 		(property "Reference" "#PWR07"
-			(at 48.26 74.93 0)
+			(at 53.34 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2608,17 +2600,16 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "I2C1_SCL (fictional)"
-			(at 40.64 74.9299 90)
+		(property "Value" "I2C1_SCL (GPIO 03)"
+			(at 36.322 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 44.45 74.93 0)
+			(at 49.53 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2627,7 +2618,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 44.45 74.93 0)
+			(at 49.53 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2636,7 +2627,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 44.45 74.93 0)
+			(at 49.53 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2664,10 +2655,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ffd3048e-6dd6-45fa-a125-8d5842001e49")
 		(property "Reference" "U1"
-			(at 106.3341 46.99 0)
+			(at 110.744 84.074 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2676,7 +2666,7 @@
 			)
 		)
 		(property "Value" "BNO055"
-			(at 106.3341 49.53 0)
+			(at 109.22 86.106 0)
 			(effects
 				(font
 					(size 1.27 1.27)
